@@ -2,6 +2,15 @@ var n = 10;
 var m = 4;
 var coins = [2,5,3,6]
 
+/*
+if n = 10 and coins = {2,5,3,6}, there will be 5 solutions,
+    #1. {2,2,2,2,2}
+    #2. {2,2,3,3}
+    #3. {2,2,6}
+    #4. {2,3,5}
+    #5. {5,5}
+*/
+
 coins.sort((a,b) => a-b)
 
 function change(n , coins){
